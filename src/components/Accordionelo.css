@@ -1,0 +1,30 @@
+.accordion {
+  --bs-accordion-btn-bg: rgb(45 45 45);
+  --bs-accordion-btn-color: white;
+  --bs-accordion-active-bg: rgb(45 45 45);
+  --bs-accordion-active-color: white;
+  --bs-accordion-btn-focus-box-shadow: none;
+  --bs-accordion-bg: rgb(45 45 45);
+  --bs-accordion-color: white;
+}
+
+.accordion-body {
+  font-size: 20px;
+}
+
+.accordion-button {
+  font-size: 22px;
+  padding: 29px;
+}
+.accordion-button:hover {
+  background-color: rgb(69, 69, 69);
+}
+
+.accordion-button::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='rgb(255,255,255)' class='bi bi-plus-lg' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z'/%3E%3C/svg%3E");
+  transition: 0.5s;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='rgb(255,255,255)' class='bi bi-dash-lg' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8Z'/%3E%3C/svg%3E");
+  transition: 0.5s;
+}
